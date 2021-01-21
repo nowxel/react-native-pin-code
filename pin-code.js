@@ -27,7 +27,7 @@ class CodePin extends Component {
     this.onKeyPress = this.onKeyPress.bind(this);
   }
 
-  componentWillReceiveProps(newProps) {
+  UNSAFE_componentWillReceiveProps(newProps) {
     const codeLength = newProps.number || newProps.code.length;
 
     if (newProps.number !== this.props.number) {
